@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MikeMedia Navigation Bar</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div class="nav-container">
+        <div class="backdrop" id="backdrop"></div>
+        
+        <nav class="nav">
+            <div class="nav-content">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="nav-logo">
+                        <picture><img src="Images/mikemedia-2.png" alt="nav-logo"></picture>
+                    </a>
+
+                    <div class="desktop-menu">
+                        <a href="aboutme.html" class="nav-item">About Me</a>
+                        <a href="gallery.html" class="nav-item">Gallery</a>
+                        <a href="projects.html" class="nav-item">Projects</a>
+                        <a href="booking.html" class="nav-item">Booking</a>
+                        <a href="contactme.html" class="nav-item">Contact Me</a>
+                        
+                    </div>
+
+                    <div class="nav-icons">
+                        <button class="icon-button">
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                        <button class="icon-button">
+                            <svg class="bag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 01-8 0"></path>
+                            </svg>
+                        </button>
+                        
+                        <button class="menu-button" id="menuButton">
+                            <span class="menu-button-bar"></span>
+                            <span class="menu-button-bar"></span>
+                            <span class="menu-button-bar"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#" class="nav-item">About Me</a>
+            <a href="#" class="nav-item">Gallery</a>
+            <a href="#" class="nav-item">Projects</a>
+            <a href="#" class="nav-item">Booking</a>
+            <a href="#" class="nav-item">Contact Me</a>
+            
+        </div>
+    </div>
+    <div class="body-text" id="bodytext">
+        <h1>Welcome</h1>
+        <p>Dive into the world of boundless creativity where photography,
+            videography, audio engineering, UX design, and software innovation converge.
+              I'm passionate about crafting visuals, soundscapes, and user experiences that leave lasting impressions.
+               Whether you're here to explore my portfolio, learn more about my journey, or book my services, 
+               this space is dedicated to showcasing the art of storytelling through multiple mediums. 
+               Let's collaborate to bring your vision to life!</p>
+    </div>
+    <picture><img src="Images/mikeaudioengineer.jpeg" alt=""></picture>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
