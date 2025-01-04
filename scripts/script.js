@@ -39,20 +39,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-  
-    document.addEventListener('DOMContentLoaded', () => {
-        const slider = document.querySelector('.slider');
-        const slides = slider.querySelectorAll('img');
-        let currentIndex = 0;
-    
-        const updateSlider = () => {
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-        };
-    
-        const autoSlide = () => {
-            currentIndex = (currentIndex + 1) % slides.length;
-            updateSlider();
-        };
-    
-        setInterval(autoSlide, 3000); // Slides change every 3 seconds
-    });
+    // Slider functionality
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    // Function to show the next slide
+    function showSlide(index) {
+        // Remove active class from all slides
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+        
+        // Add active class to current slide
+        slides[index].classList.add('active');
+    }
+
+    // Function to advance to next slide
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Show first slide initially
+    showSlide(0);
+
+    // Set interval for automatic sliding (every 3 seconds)
+    setInterval(nextSlide, 3000);
+});

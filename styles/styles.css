@@ -64,31 +64,63 @@ body {
 .desktop-menu {
     display: none;
 }
-.body-text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    text-align: left;
-    max-width: 500px; /* Adjust the width to your preference */
-    word-wrap: break-word; /* Ensures long words break properly */
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #dccfcf; /* Adjust color as needed */
-}
-.content-wrapper {
+.content-container {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
-    gap: 20px;
-    margin: 20px;
+    align-items: center;
+    padding: 0 10%;
+    height: calc(100vh - 48px); /* Subtract navbar height */
 }
 
 .body-text {
-    flex: 1;
+    flex: 0 1 45%;
+    position: relative;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    color: #dccfcf;
+    line-height: 1.6;
+    transform: none;
+    top: 0;
+    left: 0;
 }
 
+.slider-container {
+    flex: 0 1 45%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
 
+.slider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none; /* Hide all slides by default */
+}
+
+.slide.active {
+    opacity: 1;
+    display: block; /* Show only active slide */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 @media (min-width: 768px) {
     .desktop-menu {
         display: flex;
