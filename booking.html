@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MikeMedia Navigation Bar</title>
+    <title>Booking - Mike M.E-dia</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/booking.css">
 </head>
 <body>
     <div class="nav-container">
         <div class="backdrop" id="backdrop"></div>
-        
+
         <nav class="nav">
             <div class="nav-content">
                 <div class="nav-wrapper">
@@ -23,24 +25,19 @@
                         <a href="projects.html" class="nav-item">Projects</a>
                         <a href="booking.html" class="nav-item">Booking</a>
                         <a href="contactme.html" class="nav-item">Contact Me</a>
-                        
+
                     </div>
 
                     <div class="nav-icons">
                         <button class="icon-button">
-                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
                         </button>
-                        <button class="icon-button">
-                            <svg class="bag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
-                                <line x1="3" y1="6" x2="21" y2="6"></line>
-                                <path d="M16 10a4 4 0 01-8 0"></path>
-                            </svg>
-                        </button>
-                        
+                      
+
                         <button class="menu-button" id="menuButton">
                             <span class="menu-button-bar"></span>
                             <span class="menu-button-bar"></span>
@@ -52,18 +49,330 @@
         </nav>
 
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#" class="nav-item">About Me</a>
-            <a href="#" class="nav-item">Gallery</a>
-            <a href="#" class="nav-item">Projects</a>
-            <a href="#" class="nav-item">Booking</a>
-            <a href="#" class="nav-item">Contact Me</a>
-            
+            <a href="aboutme.html" class="nav-item">About Me</a>
+            <a href="gallery.html" class="nav-item">Gallery</a>
+            <a href="projects.html" class="nav-item">Projects</a>
+            <a href="booking.html" class="nav-item">Booking</a>
+            <a href="contactme.html" class="nav-item">Contact Me</a>
+
         </div>
     </div>
-   
-    
-    
 
-    <script src="script.js"></script>
+</div>
+</div>
+<main class="booking-main">
+    <div class="booking-header">
+        <h1>Book Your Session</h1>
+        <p>Choose from our professional photography and videography packages</p>
+    </div>
+
+    <!-- Package Categories -->
+    <div class="package-categories">
+        <!-- Graduation Packages -->
+        <section class="package-section" id="graduation">
+            <h2>Graduation Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <img src="Images/gallery/graduation/pic2.png" alt="Basic Graduation Package">
+                    <h3>Basic Package</h3>
+                    <p class="price">$200</p>
+                    <ul>
+                        <li>1-hour session</li>
+                        <li>2 locations on campus</li>
+                        <li>12 edited photos</li>
+                        <li>Digital delivery</li>
+                    </ul>
+                    <button class="book-btn" data-package="Graduation Basic">Book Now</button>
+                </div>
+
+                <div class="package-card">
+                    <img src="Images/gallery/graduation/pic40.png" alt="Premium Graduation Package">
+                    <h3>Premium Package</h3>
+                    <p class="price">$400</p>
+                    <ul>
+                        <li>2-hour session</li>
+                        <li>Multiple campus locations</li>
+                        <li>24 edited photos</li>
+                        <li>Digital delivery</li>
+
+                    </ul>
+                    <button class="book-btn" data-package="Graduation Premium">Book Now</button>
+                </div>
+
+                <div class="package-card">
+                    <img src="Images/gallery/graduation/pic6.png" alt="Deluxe Graduation Package">
+                    <h3>Deluxe Package</h3>
+                    <p class="price">$700</p>
+                    <ul>
+                        <li>3-hour session</li>
+                        <li>Unlimited locations</li>
+                        <li>36 edited photos</li>
+                        <li>Digital delivery</li>
+                        <li>30 sec Teaser Video </li>
+
+                    </ul>
+                    <button class="book-btn" data-package="Graduation Deluxe">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Packages -->
+        <section class="package-section" id="events">
+            <h2>Event Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <img src="Images/gallery/events/file17.png" alt="Basic Event Package">
+                    <h3>Basic Package</h3>
+                    <p class="price">$200/hour</p>
+                    <ul>
+                        <li>Minimum 2 hours</li>
+                        <li>Event coverage</li>
+                        <li>100 edited photos</li>
+                        <li>Digital delivery</li>
+                    </ul>
+                    <button class="book-btn" data-package="Events Basic">Book Now</button>
+                </div>
+
+                <div class="package-card">
+                    <img src="Images/gallery/events/file2.png" alt="Premium Event Package">
+                    <h3>Premium Package</h3>
+                    <p class="price">$400/hour</p>
+                    <ul>
+                        <li>Minimum 3 hours</li>
+                        <li>Two photographers</li>
+                        <li>200 edited photos</li>
+                        <li>Digital delivery</li>
+                        <li>Same-day preview photos</li>
+                    </ul>
+                    <button class="book-btn" data-package="Events Premium">Book Now</button>
+                </div>
+
+                <div class="package-card">
+                    <img src="Images/gallery/events/file15.png" alt="Deluxe Event Package">
+                    <h3>Deluxe Package</h3>
+                    <p class="price">$500/hour</p>
+                    <ul>
+                        <li>Minimum 4 hours</li>
+                        <li>Two photographers</li>
+                        <li>300 edited photos</li>
+                        <li>Digital delivery</li>
+                        <li>Same-day preview photos</li>
+                        <li>Photo booth setup</li>
+                    </ul>
+                    <button class="book-btn" data-package="Events Deluxe">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other sections follow similar pattern -->
+    </div>
+    <!-- Video Packages -->
+    <section class="package-section" id="video">
+        <h2>Video Production Packages</h2>
+        <div class="packages-grid">
+            <div class="package-card">
+                <img src="Images/gallery/video/pic4.png" alt="Basic Video Package">
+                <h3>Basic Video Package</h3>
+                <p class="price">$500</p>
+                <ul>
+                    <li>2-hour shoot</li>
+                    <li>Single location</li>
+                    <li>Basic editing</li>
+                    <li>1-2 minute final video</li>
+                    <li>2 rounds of revisions</li>
+                    <li>Background music</li>
+                    <li>Delivered in HD</li>
+                </ul>
+                <button class="book-btn" data-package="Video Basic">Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <img src="Images/gallery/video/pic1.png" alt="Premium Video Package">
+                <h3>Premium Video Package</h3>
+                <p class="price">$1,000</p>
+                <ul>
+                    <li>4-hour shoot</li>
+                    <li>Multiple locations</li>
+                    <li>Advanced editing</li>
+                    <li>2-4 minute final video</li>
+                    <li>3 rounds of revisions</li>
+                    <li>Custom music selection</li>
+                    <li>Drone footage</li>
+                    <li>Delivered in 4K</li>
+                    <li>Social media cuts</li>
+                </ul>
+                <button class="book-btn" data-package="Video Premium">Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <img src="Images/gallery/video/pic3.png" alt="Deluxe Video Package">
+                <h3>Deluxe Video Package</h3>
+                <p class="price">$2,000</p>
+                <ul>
+                    <li>Full-day shoot (8 hours)</li>
+                    <li>Multiple locations</li>
+                    <li>Professional editing</li>
+                    <li>5+ minute main video</li>
+                    <li>Unlimited revisions</li>
+                    <li>Licensed music</li>
+                    <li>Drone footage</li>
+                    <li>Professional audio</li>
+                    <li>Multiple camera angles</li>
+                    <li>Behind-the-scenes content</li>
+                    <li>Social media package</li>
+                    <li>Raw footage included</li>
+                    <li>Delivered in 4K</li>
+                </ul>
+                <button class="book-btn" data-package="Video Deluxe">Book Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Form Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Book Your Session</h2>
+            <form action="https://formspree.io/f/mgvvprww" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="vision">Your Vision:</label>
+                    <textarea id="vision" name="vision" rows="4" placeholder="Describe your vision" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="packageType">Package Type:</label>
+                    <input type="text" id="packageType" name="packageType" readonly>
+                </div>
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </div>
+    </div>
+    <!-- Logo Design Packages -->
+    <section class="package-section" id="logo">
+        <h2>Logo Design</h2>
+        <div class="packages-grid">
+            <div class="package-card">
+                <img src="Images/gallery/logo/pic3.png" alt="Basic Logo Package">
+                <h3>Basic Logo</h3>
+                <p class="price">$150</p>
+                <ul>
+                    <li>2 Initial Concepts</li>
+                    <li>2 Revision Rounds</li>
+                    <li>Final Files in PNG & JPG</li>
+                    <li>3 Day Delivery</li>
+                    <li>Basic Brand Guide</li>
+                </ul>
+                <button class="book-btn" data-package="Logo Basic">Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <img src="Images/gallery/logo/pic1.png" alt="Premium Logo Package">
+                <h3>Premium Logo</h3>
+                <p class="price">$300</p>
+                <ul>
+                    <li>4 Initial Concepts</li>
+                    <li>4 Revision Rounds</li>
+                    <li>Files in All Formats</li>
+                    <li>5 Day Delivery</li>
+                    <li>Social Media Kit</li>
+                    <li>Comprehensive Brand Guide</li>
+                    <li>Business Card Design</li>
+                </ul>
+                <button class="book-btn" data-package="Logo Premium">Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <img src="Images/gallery/logo/pic2.png" alt="Deluxe Logo Package">
+                <h3>Deluxe Logo</h3>
+                <p class="price">$500</p>
+                <ul>
+                    <li>6 Initial Concepts</li>
+                    <li>Unlimited Revisions</li>
+                    <li>All File Formats</li>
+                    <li>7 Day Delivery</li>
+                    <li>Complete Brand Identity</li>
+                    <li>Social Media Kit</li>
+                    <li>Stationery Design</li>
+                    <li>Marketing Materials</li>
+                </ul>
+                <button class="book-btn" data-package="Logo Deluxe">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Development Packages -->
+    <section class="package-section" id="website">
+        <h2>Website Development</h2>
+        <div class="packages-grid">
+            <div class="package-card">
+                <img src="Images/gallery/website/pic1.png" alt="Basic Website Package">
+                <h3>Basic Website</h3>
+                <p class="price">$800</p>
+                <ul>
+                    <li>5 Pages</li>
+                    <li>Mobile Responsive</li>
+                    <li>Basic SEO Setup</li>
+                    <li>Contact Form</li>
+                    <li>2 Revision Rounds</li>
+                    <li>14 Day Delivery</li>
+                </ul>
+                <button class="book-btn" data-package="Website Basic">Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <img src="Images/gallery/website/pic2.png" alt="Premium Website Package">
+                <h3>Premium Website</h3>
+                <p class="price">$1,500</p>
+                <ul>
+                    <li>10 Pages</li>
+                    <li>Mobile Responsive</li>
+                    <li>Advanced SEO Setup</li>
+                    <li>Contact Forms</li>
+                    <li>Basic E-commerce (up to 20 products)</li>
+                    <li>Social Media Integration</li>
+                    <li>4 Revision Rounds</li>
+                    <li>21 Day Delivery</li>
+                </ul>
+                <button class="book-btn" data-package="Website Premium">Book Now</button>
+            </div>
+
+            <div class="package-card">
+                <img src="Images/gallery/website/pic3.png" alt="Deluxe Website Package">
+                <h3>Deluxe Website</h3>
+                <p class="price">$3,000</p>
+                <ul>
+                    <li>Unlimited Pages</li>
+                    <li>Mobile Responsive</li>
+                    <li>Advanced SEO Setup</li>
+                    <li>Full E-commerce Solution</li>
+                    <li>Payment Gateway Integration</li>
+                    <li>Custom Animations</li>
+                    <li>Social Media Integration</li>
+                    <li>Analytics Setup</li>
+                    <li>Unlimited Revisions</li>
+                    <li>30 Day Delivery</li>
+                </ul>
+                <button class="book-btn" data-package="Website Deluxe">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    </div>
+    </section>
+</main>
+
+<script src="scripts/booking.js"></script>
 </body>
+
 </html>

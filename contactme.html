@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MikeMedia Navigation Bar</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <!-- Add Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <div class="nav-container">
         <div class="backdrop" id="backdrop"></div>
-        
+
         <nav class="nav">
             <div class="nav-content">
                 <div class="nav-wrapper">
@@ -23,24 +28,26 @@
                         <a href="projects.html" class="nav-item">Projects</a>
                         <a href="booking.html" class="nav-item">Booking</a>
                         <a href="contactme.html" class="nav-item">Contact Me</a>
-                        
+
                     </div>
 
                     <div class="nav-icons">
                         <button class="icon-button">
-                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
                         </button>
                         <button class="icon-button">
-                            <svg class="bag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg class="bag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
                                 <line x1="3" y1="6" x2="21" y2="6"></line>
                                 <path d="M16 10a4 4 0 01-8 0"></path>
                             </svg>
                         </button>
-                        
+
                         <button class="menu-button" id="menuButton">
                             <span class="menu-button-bar"></span>
                             <span class="menu-button-bar"></span>
@@ -57,13 +64,76 @@
             <a href="#" class="nav-item">Projects</a>
             <a href="#" class="nav-item">Booking</a>
             <a href="#" class="nav-item">Contact Me</a>
-            
+
         </div>
     </div>
-    
-    
-    
+    <main class="contact-main">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h1>Get In Touch</h1>
 
-    <script src="script.js"></script>
+                <form id="contactForm" action="php/contact-handler.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="packageType">Service Type</label>
+                        <select id="packageType" name="packageType" required>
+                            <option value="">Select a Service</option>
+                            <option value="Photography">Photography</option>
+                            <option value="Videography">Videography</option>
+                            <option value="Audio">Audio Engineering</option>
+                            <option value="Web">Web Development</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <h2>Follow Me</h2>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/mikethe_engineer/" target="_blank" class="social-icon"
+                            title="Personal Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="icon-label">Personal</span>
+                        </a>
+                        <a href="https://www.instagram.com/mikem.edia/" target="_blank" class="social-icon"
+                            title="Media Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="icon-label">Media</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/michael-ojo-b19ab4298/" target="_blank" class="social-icon"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="icon-label">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+    </main>
+
+    <script src="scripts/contact.js"></script>
+
+
+
 </body>
+
 </html>

@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MikeMedia Navigation Bar</title>
+    <title>Mike M.E-dia - Creative & Technical Services</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -36,14 +38,7 @@
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
                         </button>
-                        <button class="icon-button">
-                            <svg class="bag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
-                                <line x1="3" y1="6" x2="21" y2="6"></line>
-                                <path d="M16 10a4 4 0 01-8 0"></path>
-                            </svg>
-                        </button>
+                      
 
                         <button class="menu-button" id="menuButton">
                             <span class="menu-button-bar"></span>
@@ -56,49 +51,131 @@
         </nav>
 
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#" class="nav-item">About Me</a>
-            <a href="#" class="nav-item">Gallery</a>
-            <a href="#" class="nav-item">Projects</a>
-            <a href="#" class="nav-item">Booking</a>
-            <a href="#" class="nav-item">Contact Me</a>
+            <a href="aboutme.html" class="nav-item">About Me</a>
+            <a href="gallery.html" class="nav-item">Gallery</a>
+            <a href="projects.html" class="nav-item">Projects</a>
+            <a href="booking.html" class="nav-item">Booking</a>
+            <a href="contactme.html" class="nav-item">Contact Me</a>
 
         </div>
     </div>
     
-        <div class="content-container">
-            <div class="body-text">
-                <h1>Welcome</h1>
-                <p>Dive into the world of boundless creativity where photography,
-                    videography, audio engineering, UX design, and software innovation converge.
-                    I'm passionate about crafting visuals, soundscapes, and user experiences that leave lasting impressions.
-                    Whether you're here to explore my portfolio, learn more about my journey, or book my services,
-                    this space is dedicated to showcasing the art of storytelling through multiple mediums.
-                    Let's collaborate to bring your vision to life!</p>
-            </div>
-        
-            <div class="slider-container">
-                <div class="slider">
-                    <div class="slide active">
-                        <img src="./Images/mikeaudioengineer.jpeg" alt="Slide 1">
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/mikepic1.jpg" alt="Slide 2">
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/mikepic2.jpg" alt="Slide 3">
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/mikepic3.jpeg" alt="Slide 4">
-                    </div>
-                    <div class="slide">
-                        <img src="./Images/mikepic4.jpeg" alt="Slide 4">
-                    </div>
+        <!-- Hero Section -->
+    <div class="content-container">
+        <div class="body-text">
+            <h1>Welcome</h1>
+            <p>Dive into the world of boundless creativity where photography,
+             videography, audio engineering, UX design, and software innovation converge.
+             I'm passionate about crafting visuals, soundscapes, and user experiences that leave lasting impressions.
+             Whether you're here to explore my portfolio, learn more about my journey, or book my services,
+             this space is dedicated to showcasing the art of storytelling through multiple mediums.
+             Let's collaborate to bring your vision to life!</p>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="./Images/mikeaudioengineer.jpeg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="./Images/mikepic1.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="./Images/mikepic2.jpg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="./Images/mikepic3.jpeg" alt="Slide 4">
+                </div>
+                <div class="slide">
+                    <img src="./Images/mikepic4.jpeg" alt="Slide 4">
                 </div>
             </div>
         </div>
-   
+    </div>
+    </div>
+
+    <!-- Featured Services -->
+    <section class="featured-services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-camera"></i>
+                <h3>Photography</h3>
+                <p>Professional photography for events, graduations, and studio sessions.</p>
+                <a href="gallery.html" class="service-link">View Gallery</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-video"></i>
+                <h3>Videography</h3>
+                <p>High-quality video production and editing services.</p>
+                <a href="projects.html" class="service-link">See Projects</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Custom website design and development solutions.</p>
+                <a href="projects.html" class="service-link">View Work</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Quick About -->
+    <section class="quick-about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <div class="faith-highlight">FIRST: I'M A FOLLOWER OF JESUS CHRIST!</div>
+            <p>Cornell student studying Information and Computing Science, aspiring to be a software engineer, UX designer, and content manager. Working with Youth Design Center and Skyloft Studio.</p>
+            <a href="aboutme.html" class="learn-more-btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <h2>Recent Work</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="Images/gallery/graduation/pic11.png" alt="Recent Project">
+                <div class="project-overlay">
+                    <h3>Photography</h3>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Images/gallery/video/pic1.png" alt="Recent Project">
+                <div class="project-overlay">
+                    <h3>Video Production</h3>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Images/mikepic4.jpeg" alt="Recent Project">
+                <div class="project-overlay">
+                    <h3>Audio Engineering</h3>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="view-all-btn">View All Projects</a>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's create something amazing together.</p>
+        <div class="cta-buttons">
+            <a href="booking.html" class="cta-btn book-btn">Book a Service</a>
+            <a href="contactme.html" class="cta-btn contact-btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer with Social Links -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/mikethe_engineer/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/mikem.edia/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/michael-ojo-b19ab4298/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
 
     <script src="scripts/script.js"></script>
+</body>
 
 </body>
 
